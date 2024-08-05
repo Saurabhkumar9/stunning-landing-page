@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(24, 22, 22, 0.82);
+}
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.top {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url("jeremy-bishop-top.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.top .overlay {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.215);
+    margin: 5px;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: white;
+    bottom: 5%;
+}
+
+.overlay h1 {
+    font-weight: 600;
+    font-size: 4vw;
+    color: rgb(255, 255, 255);
+}
+
+.image {
+    background-image: url("computer.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 240px;
+    width: 340px;
+    
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    margin: 20px;
+}
+
+.icons i,a {
+    font-size: 30px;
+    color: white;
+}
+
+
+/* buttom part style */
+.buttom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+}
+
+/* box1 styleing */
+.b1{
+    width: 30%;
+    min-height: inherit;
+    background-image: url("benjamin-voros-moon.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    opacity: 0.9;
+   
+}
+.b1 h1{
+    text-align: center;
+    padding: 30px;
+}
+.b1 p{
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* b2 styleing */
+.b2{
+    width: 30%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+.b2 .up{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url("sam-melchor-Qenginer.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    opacity: 0.9;
+   
+}
+
+.b2 .up  h1{
+    text-align: center;
+    padding: 30px;
+    
+}
+.b2 .up  p{
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+.b2 .down{
+    width: 100%;
+    min-height: 25vh;
+    background-image: url("shane-aldendorff-search.jpg");
+    background-size: cover;
+    background-position: center;
+    color: goldenrod;
+    margin-top: 3px;
+   
+    
+}
+.b2 .overl{
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+    background-color: rgba(255, 255, 255, 0.171);
+}
+
+/* b3 style */
+.b3{
+    width: 40%;
+    min-height: inherit;
+    background-image: url("mesut-kaya-etrvel.jpg");
+    background-size: cover;
+    background-position: center;
+    color: rgba(245, 245, 245, 0.929);
+    opacity: 10;
+   
+}
+
+.b3 .overl{
+    justify-content: center;
+    position: relative;
+    margin-left: 15%;
+    width: 50%;
+    height: 100%;
+    padding: 4vw 10vh;
+   
+  
+}
+.b3 .overl p{
+    padding: 1.2vh;
+}
+
+/* responsive */
+
+
+@media(max-height:700){
+    .b3 .overl{
+        width: 100%;
+        margin-left: initial;
+    }
+}
+
+@media(max-width:500px){
+    .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .overlay h1{
+        font-size: 5vh;
+        flex-direction: column;
+    }
+    .image{
+        /* height: 200px;
+        width: 140px;
+        margin-top: 30px;
+        margin-left: 10px; */
+        background-image: none;
+    }
+    .icon{
+        margin: 10px;
+    }
+    .buttom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1{
+        width: 100%;
+        min-height: 30vh;
+    }
+    .b2{
+        width: 100%;
+    }
+    .b2 up{
+        min-height: 30vh;
+    }
+    .b3{
+        width: 100%;
+        min-height: 30vh;
+        background-position: left;
+    }
+}
